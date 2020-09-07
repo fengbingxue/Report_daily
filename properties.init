@@ -1,0 +1,24 @@
+[Mysql]
+host=192.168.1.50
+port=3306
+user=root
+passwd=123456
+db=asset
+testlink_host=192.168.1.133
+testlink_user=testlink
+testlink_passwd=testlink_test
+
+[Redmine]
+host=http://192.168.1.1:38435
+username=fengbingxue
+pw=123456
+project_name=simo_zcgl
+fixed_version_id=1103
+
+[Plan]
+start_time = 2020-08-18
+end_time = 2020-10-01
+test_time = 2020/08/18-2020/09/30
+test_plan = http://192.168.1.1:38435/issues/84430
+test_version = sixx-2.0.0-t3
+tester = 李 国立,孝 丹
