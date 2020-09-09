@@ -72,7 +72,10 @@ def test_rate():
         except:
             print("Error: unable to fetch data")
         testlink_db.close()
-        tester_rate = round(results_execute[0][0]*100/results_all[0][0],2)
+        if results_all[0][0] != 0 and results_execute[0][0] != 0:
+            tester_rate = round(results_execute[0][0] * 100 / results_all[0][0], 2)
+        else:
+            tester_rate = 0
         # ----
         for issue in issues_all:
             create_time = str(issue.created_on.year) + "-" + str(issue.created_on.month) + "-" + str(issue.created_on.day)
